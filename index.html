@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hostel Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🏨 Hostel Management System</h1>
+
+<div class="container">
+
+  <!-- Attendance -->
+  <div class="card">
+    <h2>Attendance</h2>
+    <input type="text" id="studentName" placeholder="Enter student name">
+    <button onclick="markAttendance()">Mark Present</button>
+    <ul id="attendanceList"></ul>
+  </div>
+
+  <!-- Gate Pass -->
+  <div class="card">
+    <h2>Gate Pass</h2>
+    <input type="text" id="gateStudent" placeholder="Student name">
+    <button onclick="requestGatePass()">Request Pass</button>
+    <ul id="gateList"></ul>
+  </div>
+
+  <!-- Visitor Log -->
+  <div class="card">
+    <h2>Visitor Log</h2>
+    <input type="text" id="visitorName" placeholder="Visitor name">
+    <input type="text" id="visitStudent" placeholder="Student name">
+    <button onclick="addVisitor()">Add Visitor</button>
+    <ul id="visitorList"></ul>
+  </div>
+
+  <!-- Mess Feedback -->
+  <div class="card">
+    <h2>Mess Feedback</h2>
+    <input type="text" id="feedbackText" placeholder="Your feedback">
+    <button onclick="addFeedback()">Submit</button>
+    <ul id="feedbackList"></ul>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
